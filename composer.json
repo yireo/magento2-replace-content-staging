@@ -14,7 +14,7 @@
     "magento/module-checkout-staging": "*",
     "magento/module-cms-page-builder-analytics-staging": "*",
     "magento/module-cms-staging": "*",
-    "magento/module-configurable-product-staging": "*"
+    "magento/module-configurable-product-staging": "*",
     "magento/module-downloadable-staging": "*",
     "magento/module-gift-card-staging": "*",
     "magento/module-gift-message-staging": "*",
