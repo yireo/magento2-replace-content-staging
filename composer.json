@@ -1,6 +1,6 @@
 {
   "name": "yireo/magento2-replace-content-staging",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "replace": {
     "magento/module-bundle-import-export-staging": "*",
     "magento/module-bundle-staging": "*",
