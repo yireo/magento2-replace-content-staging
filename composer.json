@@ -2,7 +2,6 @@
   "name": "yireo/magento2-replace-content-staging",
   "version": "2.3.2",
   "replace": {
-    "magento/module-configurable-product-staging": "*",
     "magento/module-bundle-import-export-staging": "*",
     "magento/module-bundle-staging": "*",
     "magento/module-catalog-import-export-staging": "*",
