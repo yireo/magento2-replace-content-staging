@@ -33,5 +33,6 @@
     "magento/module-staging": "*",
     "magento/module-staging-page-builder": "*",
     "magento/module-weee-staging": "*"
-  }
+  },
+  "description": "Checkout a specific branch"
 }
