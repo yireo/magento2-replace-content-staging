@@ -29,7 +29,7 @@ jobs:
         run: |
             REF=${{ github.ref }}
             cd $GITHUB_WORKSPACE; export CE_VERSION=`echo ${REF##*/} | cut -f2 -d-`
-            if [ "$CE_VERSION" == "2.3.5" ]; then export CE_VERSION=2.3.5-p1; fi
+            if [ "$CE_VERSION" = "2.3.5" ]; then export CE_VERSION=2.3.5-p1; fi
             test -z "$CE_VERSION" && exit 1
             composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:${CE_VERSION} /tmp/m2 --no-install --no-interaction --no-progress
       - name: Setup local composer package
