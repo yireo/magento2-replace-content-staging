@@ -21,13 +21,13 @@ jobs:
         env:
             MAGENTO_MARKETPLACE_USERNAME: ${{ secrets.MAGENTO_MARKETPLACE_USERNAME }}
             MAGENTO_MARKETPLACE_PASSWORD: ${{ secrets.MAGENTO_MARKETPLACE_PASSWORD }}
-            CE_VERSION: 2.3.5-p1
         run: |
             mkdir -p /tmp/m2 && cd /tmp/m2
             composer global config http-basic.repo.magento.com $MAGENTO_MARKETPLACE_USERNAME $MAGENTO_MARKETPLACE_PASSWORD
             composer global require hirak/prestissimo
       - name: Creating Magento composer project
         run: |
+            cd $GITHUB_WORKSPACE; export CE_VERSION=`git branch --show-current | cut -f2 -d-`
             composer create-project --repository=https://repo.magento.com/ magento/project-community-edition:${CE_VERSION} /tmp/m2 --no-install --no-interaction --no-progress
       - name: Setup local composer package
         env:
