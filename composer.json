@@ -1,7 +1,7 @@
 {
   "name": "yireo/magento2-replace-content-staging",
   "require": {
-    "magento/product-community-edition": "2.3.3"
+    "magento/product-community-edition": "~2.3.3"
   },
   "replace": {
     "magento/module-bundle-import-export-staging": "*",
