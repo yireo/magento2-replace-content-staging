@@ -1,6 +1,7 @@
-# Magento 2 removal of optional Content Staging modules
-This repository contains a composer meta-package that removes optional Content Staging modules. To install, use the following:
+# Magento 2 removal of optional modules
+This repository contains a composer meta-package that removes optional modules. To install this package, use the following:
 
-    composer require yireo/magento2-replace-content-staging:2.3.X
-    
-See also the package `yireo/magento2-replace-all`.
+    composer require yireo/magento2-replace-content-staging
+
+## Notes
+See the package [`yireo/magento2-replace-tools`.](https://github.com/yireo/magento2-replace-tools) for more information
